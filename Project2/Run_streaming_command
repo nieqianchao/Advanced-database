@@ -1,0 +1,6 @@
+hadoop fs -rmr /Project2/Q5_output
+
+hadoop jar /usr/share/hadoop/contrib/streaming/hadoop-streaming-1.2.1.jar -file /home/hadoop/Project2/Streaming/mapper.py -mapper /home/hadoop/Project2/Streaming/mapper.py -file /home/hadoop/Project2/Streaming/reducer.py -reducer /home/hadoop/Project2/Streaming/reducer.py -input /user/hadoop/c_input/* -input /user/hadoop/t_input/* -output /Project2/Q5_output
+
+
+
